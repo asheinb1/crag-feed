@@ -1,0 +1,14 @@
+{
+  "climbers": [
+    {
+      "name": "cam-maam",
+      "feedUrl": "https://www.mountainproject.com/rss/user-ticks/200484813",
+      "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks"
+    },
+    {
+      "name": "Reece James",
+      "feedUrl": "https://www.mountainproject.com/rss/user-ticks/201670934",
+      "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks"
+    }
+  ]
+}

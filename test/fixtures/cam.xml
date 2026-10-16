@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ticks for test-user-a</title>
+    <link>https://www.mountainproject.com/user/200000001/test-user-a</link>
+    <description>Recent ticks</description>
+    <item>
+      <title>Thin Slabs / Thin Slabs Direct (5.7+)</title>
+      <link>https://www.mountainproject.com/route/105800000/thin-slabs-direct</link>
+      <guid isPermaLink="false">tick-1001</guid>
+      <pubDate>Mon, 12 Oct 2026 14:30:00 GMT</pubDate>
+      <description><![CDATA[<p>Destinations &gt; New York &gt; Shawangunks &gt; Trapps &gt; Thin Slabs</p>]]></description>
+    </item>
+    <item>
+      <title>High Exposure (5.6 PG13)</title>
+      <link>https://www.mountainproject.com/route/105800001/high-exposure</link>
+      <guid isPermaLink="false">tick-1002</guid>
+      <pubDate>Sun, 11 Oct 2026 23:50:00 GMT</pubDate>
+      <description><![CDATA[<p>Destinations &gt; New York &gt; Shawangunks &gt; Trapps &gt; Uberfall</p>]]></description>
+    </item>
+    <item>
+      <title>Thin Slabs / Thin Slabs Direct (5.7+)</title>
+      <link>https://www.mountainproject.com/route/105800000/thin-slabs-direct</link>
+      <guid isPermaLink="false">tick-0990</guid>
+      <pubDate>Sat, 03 Oct 2026 16:00:00 GMT</pubDate>
+      <description><![CDATA[<p>Destinations &gt; New York &gt; Shawangunks &gt; Trapps &gt; Thin Slabs</p>]]></description>
+    </item>
+    <item>
+      <title>Mystery Boulder Problem</title>
+      <link>https://www.mountainproject.com/route/105800002/mystery</link>
+      <guid isPermaLink="false">tick-0980</guid>
+      <pubDate>Fri, 02 Oct 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[]]></description>
+    </item>
+    <item>
+      <title>Route With Name (Variation) (5.9)</title>
+      <link>https://www.mountainproject.com/route/105800003/route-with-name</link>
+      <guid isPermaLink="false">tick-0970</guid>
+      <pubDate>Thu, 01 Oct 2026 12:00:00 GMT</pubDate>
+      <description><![CDATA[<p>Destinations &gt; New York &gt; Shawangunks &gt; Near Trapps</p>]]></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crag Feed</title>
+  <meta name="description" content="Recent climbing ticks from friends, combined into one feed from public Mountain Project RSS feeds.">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#feed-heading">Skip to the feed</a>
+  <header class="masthead">
+    <p class="kicker">Friends &amp; ticks</p>
+    <h1>Crag Feed</h1>
+    <p class="dek">Recent sends from climbing friends, in one place. Built from public Mountain Project tick feeds.</p>
+  </header>
+
+  <main id="main">
+    <section class="status" aria-label="Update status">
+      <p id="updated" class="updated">Loading…</p>
+      <div id="notices" class="notices"></div>
+    </section>
+
+    <form id="filters" class="filters" role="search" aria-label="Search and filter ticks" autocomplete="off">
+      <div class="field field-search">
+        <label for="q">Search</label>
+        <input id="q" name="q" type="search" placeholder="Climber, route, grade or area" enterkeyhint="search">
+      </div>
+      <div class="field">
+        <label for="climber">Climber</label>
+        <select id="climber" name="climber"><option value="">Everyone</option></select>
+      </div>
+      <div class="field">
+        <label for="grade">Grade</label>
+        <select id="grade" name="grade"><option value="">Any grade</option></select>
+      </div>
+      <div class="field">
+        <label for="area">Area</label>
+        <select id="area" name="area"><option value="">Anywhere</option></select>
+      </div>
+      <div class="field field-reset">
+        <button id="reset" type="button">Reset filters</button>
+      </div>
+    </form>
+
+    <h2 id="feed-heading" class="visually-hidden">Ticks, newest first</h2>
+    <p id="count" class="count" role="status" aria-live="polite"></p>
+
+    <p id="loading" class="loading">Loading ticks…</p>
+    <div id="error" class="message message-error" role="alert" hidden></div>
+    <div id="empty" class="message" hidden></div>
+
+    <div id="feed" class="feed"></div>
+    <p class="more-wrap"><button id="more" type="button" hidden>Show more</button></p>
+  </main>
+
+  <footer class="colophon">
+    <p>Data comes from public Mountain Project RSS feeds and is refreshed about every six hours, so it is not live. This site is a personal project and is not affiliated with Mountain Project.</p>
+    <p>Everything shown here, including each climber's recent ticks, is publicly visible.</p>
+  </footer>
+
+  <noscript><p class="message">Crag Feed needs JavaScript to show the feed.</p></noscript>
+</body>
+</html>

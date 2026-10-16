@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ticks for test-user-b</title>
+    <link>https://www.mountainproject.com/user/200000002/test-user-b</link>
+    <description>Recent ticks</description>
+    <item>
+      <title>Thin Slabs / Thin Slabs Direct (5.7+)</title>
+      <link>https://www.mountainproject.com/route/105800000/thin-slabs-direct</link>
+      <guid isPermaLink="false">tick-2001</guid>
+      <pubDate>Sun, 11 Oct 2026 20:00:00 GMT</pubDate>
+      <description><![CDATA[<p>Destinations &gt; New York &gt; Shawangunks &gt; Trapps &gt; Thin Slabs</p>]]></description>
+    </item>
+    <item>
+      <title>Gelsa (5.8)</title>
+      <link>https://www.mountainproject.com/route/105800004/gelsa</link>
+      <guid isPermaLink="false">tick-2002</guid>
+      <pubDate>Wed, 07 Oct 2026 18:00:00 GMT</pubDate>
+      <description><![CDATA[<p>Destinations &gt; New York &gt; Shawangunks &gt; Trapps &gt; Gelsa Area</p>]]></description>
+    </item>
+  </channel>
+</rss>

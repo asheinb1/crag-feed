@@ -1,0 +1,20 @@
+{
+  "name": "crag-feed",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Combined Mountain Project tick feed for friends, built from public RSS.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "refresh": "node scripts/refresh.mjs",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "dependencies": {
+    "fast-xml-parser": "5.11.2"
+  },
+  "devDependencies": {
+    "jsdom": "29.1.1"
+  }
+}

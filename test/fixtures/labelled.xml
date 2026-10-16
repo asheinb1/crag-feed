@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Ticks for test-user-c</title>
+    <item>
+      <title>Test Route &amp; Friends (V3)</title>
+      <link>https://www.mountainproject.com/route/105800010/test-route</link>
+      <guid>tick-3001</guid>
+      <pubDate>Mon, 12 Oct 2026 03:00:00 GMT</pubDate>
+      <description>&lt;p&gt;Location: All Locations &amp;gt; Colorado &amp;gt; Test Crag&lt;/p&gt;&lt;p&gt;Date: 2026-10-09&lt;/p&gt;&lt;p&gt;Style: Lead, Redpoint&lt;/p&gt;&lt;p&gt;Notes: Felt great &lt;script&gt;alert(1)&lt;/script&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Leaf First Route (5.10a)</title>
+      <link>javascript:alert(1)</link>
+      <guid>tick-3002</guid>
+      <pubDate>Sun, 11 Oct 2026 03:00:00 GMT</pubDate>
+      <description>Test Wall &gt; Test Crag &gt; Colorado &gt; All Locations</description>
+    </item>
+  </channel>
+</rss>
