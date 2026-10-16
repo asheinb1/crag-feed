@@ -1,1 +1,80 @@
+name: Refresh ticks and deploy site
+
+on:
+  schedule:
+    # Every 6 hours, at 17 minutes past the hour (UTC). Off-the-hour times are less busy on GitHub.
+    - cron: '17 */6 * * *'
+  workflow_dispatch: {}          # lets you press "Run workflow" by hand
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'README.md'
+      - 'test/**'
+      - '.github/workflows/tests.yml'
+
+# Only one refresh/deploy at a time; a newer run waits instead of cancelling a deploy in progress.
+concurrency:
+  group: crag-feed-pages
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write            # needed only to save the updated data file back to the repository
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci --omit=dev
+
+      - name: Fetch feeds and update data
+        run: node scripts/refresh.mjs
+
+      - name: Save updated data (only if it changed)
+        if: always()
+        run: |
+          if git diff --quiet -- site/data/ticks.json; then
+            echo "No data changes to save."
+          else
+            git config user.name "crag-feed-bot"
+            git config user.email "crag-feed-bot@users.noreply.github.com"
+            git add site/data/ticks.json
+            git commit -m "Update tick data"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Upload site files for publishing
+        if: always()
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: refresh
+    if: always() && needs.refresh.result != 'cancelled' && needs.refresh.result != 'skipped'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
