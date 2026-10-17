@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://api.github.com; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <title>Manage · Crag Feed</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="manage.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the controls</a>
+  <header class="masthead">
+    <p class="kicker"><a href="index.html">&larr; Back to the feed</a></p>
+    <h1>Manage</h1>
+    <p class="dek">Add or remove friends, refresh the feed, and check that updates are running.</p>
+  </header>
+
+  <main id="main">
+    <p id="message" class="notice notice-info" role="status" hidden></p>
+    <p id="problem" class="notice notice-warn" role="alert" hidden></p>
+
+    <section class="panel" aria-labelledby="h-connect">
+      <h2 id="h-connect">1. Connect to GitHub</h2>
+      <p id="conn-status" class="conn-status">Checking…</p>
+      <p class="hint">Anyone can look at this page, but only someone with your GitHub token can change anything. The token is kept only in this browser and is sent only to GitHub. It is never stored in the repository or on the website.</p>
+      <form id="token-form" autocomplete="off">
+        <div class="field">
+          <label for="token">GitHub token</label>
+          <input id="token" name="token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
+        </div>
+        <p class="check"><label class="inline"><input id="remember" type="checkbox"> Remember on this device (leave unchecked on a shared computer)</label></p>
+        <p class="row">
+          <button id="connect" type="submit">Save token</button>
+          <button id="disconnect" type="button" class="secondary" hidden>Disconnect</button>
+        </p>
+      </form>
+      <details class="how">
+        <summary>How to create the token (one time, about 3 minutes)</summary>
+        <ol>
+          <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">github.com/settings/personal-access-tokens/new</a> (sign in if asked). Button labels may differ slightly.</li>
+          <li>Token name: <strong>Crag Feed manage</strong>. Expiration: <strong>90 days</strong> or longer.</li>
+          <li>Under <strong>Repository access</strong> choose <strong>Only select repositories</strong>, then pick <strong>crag-feed</strong>.</li>
+          <li>Under <strong>Repository permissions</strong> set <strong>Contents</strong> to <strong>Read and write</strong> and <strong>Actions</strong> to <strong>Read and write</strong>. Leave everything else alone.</li>
+          <li>Click <strong>Generate token</strong>, copy it (it starts with <code>github_pat_</code>), and paste it above. GitHub only shows it once.</li>
+          <li>When it expires, this page will say GitHub rejected the token. Just make a new one the same way.</li>
+        </ol>
+      </details>
+      <details id="advanced" class="how">
+        <summary>Repository settings</summary>
+        <div class="field">
+          <label for="repo-input">Repository (owner/name)</label>
+          <input id="repo-input" type="text" spellcheck="false" autocomplete="off" placeholder="your-username/crag-feed">
+        </div>
+        <p class="hint">Filled in automatically from this page's address. Only change it if the page cannot find your repository.</p>
+      </details>
+    </section>
+
+    <section class="panel" aria-labelledby="h-friends">
+      <h2 id="h-friends">2. Friends</h2>
+      <ul id="climbers" class="climbers"></ul>
+      <form id="add-form" class="add-form" autocomplete="off">
+        <h3>Add a friend</h3>
+        <div class="field">
+          <label for="add-input">Their Mountain Project profile link</label>
+          <input id="add-input" type="text" inputmode="url" spellcheck="false" placeholder="https://www.mountainproject.com/user/123456789/their-name">
+        </div>
+        <div class="field">
+          <label for="add-name">Name to show (optional)</label>
+          <input id="add-name" type="text" maxlength="60" placeholder="Taken from the link if left blank">
+        </div>
+        <p class="hint">Their ticks must be public on Mountain Project. Their existing ticks appear without a "New" badge.</p>
+        <p class="row"><button id="add-btn" type="submit" disabled>Add friend</button></p>
+      </form>
+    </section>
+
+    <section class="panel" aria-labelledby="h-updates">
+      <h2 id="h-updates">3. Updates</h2>
+      <p id="run-summary">Checking…</p>
+      <div id="workflow-warning" class="notice notice-warn" hidden>
+        <p id="workflow-warning-text"></p>
+        <p class="row"><button id="enable-workflow" type="button" disabled>Resume automatic updates</button></p>
+      </div>
+      <p class="row"><button id="refresh-now" type="button" disabled>Refresh now</button></p>
+      <p class="hint">Updates also run by themselves about every six hours. Saving a change to the friends list starts a refresh automatically. A refresh takes one to three minutes.</p>
+      <h3>Recent runs</h3>
+      <ul id="runs" class="runs"></ul>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    <p>This page talks directly to GitHub from your browser. Changes appear as commits in your repository, so they can always be reviewed or undone there.</p>
+  </footer>
+  <noscript><p class="message">The Manage page needs JavaScript.</p></noscript>
+</body>
+</html>

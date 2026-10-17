@@ -146,3 +146,35 @@ button:disabled { opacity: 0.5; cursor: default; }
 .more-wrap { text-align: center; margin: 20px 0; }
 .colophon { padding-top: 18px; padding-bottom: 40px; margin-top: 16px; border-top: 3px double var(--ink); color: var(--ink-soft); font-size: 0.85rem; }
 .colophon p { margin: 0 0 6px; }
+
+/* ---- Manage page ---- */
+.kicker a { color: var(--moss); }
+.panel { margin: 22px 0; padding: 16px; background: var(--paper-2); border: 1px solid var(--rule); }
+.panel h2 { margin: 0 0 8px; font-family: var(--serif); font-size: 1.3rem; }
+.panel h3 { margin: 18px 0 6px; font-family: var(--serif); font-size: 1.05rem; }
+.panel p { margin: 8px 0; }
+.hint { color: var(--ink-soft); font-size: 0.88rem; }
+.conn-status { font-weight: 600; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; }
+.check { font-size: 0.92rem; }
+label.inline { display: flex; gap: 8px; align-items: flex-start; text-transform: none; letter-spacing: 0; font-size: 0.92rem; font-weight: 400; color: var(--ink); }
+label.inline input { margin-top: 4px; width: 20px; height: 20px; }
+button.secondary { background: transparent; color: var(--ink); border: 1px solid var(--ink-soft); }
+button.small { min-height: 44px; padding: 6px 12px; font-size: 0.9rem; }
+.how { margin-top: 12px; }
+.how summary { cursor: pointer; font-weight: 600; min-height: 32px; }
+.how ol { padding-left: 20px; }
+.how li { margin: 6px 0; }
+.how a, .panel a { color: var(--ink); }
+code { font-size: 0.9em; background: var(--paper); padding: 1px 4px; }
+.climbers, .runs { list-style: none; margin: 0; padding: 0; }
+.climber-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+.climber-name { font-family: var(--serif); font-size: 1.1rem; font-weight: 700; }
+.climber-id { color: var(--ink-soft); font-size: 0.85rem; flex: 1 1 auto; }
+.add-form { margin-top: 12px; display: grid; gap: 10px; }
+.add-form h3 { margin: 6px 0 0; }
+.run { padding: 6px 0; border-bottom: 1px solid var(--rule); font-size: 0.92rem; }
+.run-label { font-weight: 700; }
+.run-success .run-label { color: var(--moss); }
+.run-failure .run-label, .run-timed_out .run-label { color: var(--rust); }
+.colophon a { color: var(--ink); }

@@ -192,25 +192,28 @@ test('site served from a project sub-path (/crag-feed/) loads every file it refe
     assert.equal((await fetch(new URL('styles.css', base))).status, 200);
     assert.equal((await fetch(new URL('app.js', base))).status, 200);
     assert.equal((await fetch(new URL('filters.js', base))).status, 200);
+    for (const f of ['manage.html', 'manage.js', 'github.js', 'config-edit.js']) {
+      assert.equal((await fetch(new URL(f, base))).status, 200, f);
+    }
     const data = await fetch(new URL('data/ticks.json', base));
     assert.equal(data.status, 200);
     JSON.parse(await data.text());
     // Nothing may point at the domain root (which would break under /crag-feed/).
-    for (const f of ['index.html', 'app.js', 'filters.js', 'styles.css']) {
+    for (const f of ['index.html', 'app.js', 'filters.js', 'styles.css', 'manage.html', 'manage.js', 'github.js', 'config-edit.js']) {
       const src = readFileSync(path.join(siteDir, f), 'utf8');
       assert.ok(!/(?:src|href)=["']\/(?!\/)/.test(src), `${f} has a root-absolute src/href`);
       assert.ok(!/fetch\(\s*['"`]\//.test(src), `${f} fetches a root-absolute path`);
       assert.ok(!/url\(\s*['"]?\//.test(src), `${f} has a root-absolute url()`);
       assert.ok(!/from\s+['"]\//.test(src), `${f} has a root-absolute import`);
     }
-    assert.ok(html.includes('href="styles.css"') && html.includes('src="app.js"'));
+    assert.ok(html.includes('href="styles.css"') && html.includes('src="app.js"') && html.includes('href="manage.html"'));
   } finally {
     server.close();
   }
 });
 
 // Test 16
-test('nothing in the site or scripts needs an API key, secret or paid service', () => {
+test('the public feed needs no API key or paid service; the optional Manage page only handles a token the owner pastes', () => {
   const files = [];
   const walk = (dir) => {
     for (const n of readdirSync(dir)) {
@@ -220,18 +223,37 @@ test('nothing in the site or scripts needs an API key, secret or paid service', 
   };
   walk(path.join(root, 'site'));
   walk(path.join(root, 'scripts'));
+  const manageFiles = new Set(['manage.html', 'manage.js', 'github.js', 'config-edit.js']);
   for (const f of files) {
     if (f.endsWith('.json')) continue;
+    const rel = path.relative(root, f);
     const src = readFileSync(f, 'utf8');
-    assert.ok(!/api[_-]?key|secret|password|bearer|authorization/i.test(src), `${path.relative(root, f)} mentions a credential`);
+    // No file may contain a real-looking token.
+    assert.ok(!/github_pat_[A-Za-z0-9_]{20,}|gh[pousr]_[A-Za-z0-9]{20,}/.test(src), `${rel} contains a token`);
+    const isManage = manageFiles.has(path.basename(f)) && f.includes(`${path.sep}site${path.sep}`);
+    if (!isManage) {
+      assert.ok(!/api[_-]?key|secret|password|bearer|authorization/i.test(src), `${rel} mentions a credential`);
+    }
+    const allowed = isManage
+      ? ['www.mountainproject.com', 'mountainproject.com', 'www.w3.org', 'api.github.com', 'github.com']
+      : ['www.mountainproject.com', 'mountainproject.com', 'www.w3.org'];
     for (const m of src.matchAll(/https?:\/\/[^\s'"`)<>]+/g)) {
       const host = new URL(m[0].replace(/[.,;]+$/, '')).hostname;
-      assert.ok(['www.mountainproject.com', 'mountainproject.com', 'www.w3.org'].includes(host), `${path.relative(root, f)} references ${host}`);
+      assert.ok(allowed.includes(host), `${rel} references ${host}`);
     }
     if (f.includes(`${path.sep}scripts${path.sep}`)) {
       for (const m of src.matchAll(/process\.env\.([A-Z_]+)/g)) assert.match(m[1], /^CRAG_/, `${f} reads env ${m[1]}`);
     }
   }
+  // The public feed page never loads the Manage code or talks to GitHub.
+  for (const f of ['index.html', 'app.js', 'filters.js']) {
+    const src = readFileSync(path.join(root, 'site', f), 'utf8');
+    assert.ok(!/api\.github\.com|github\.js|manage\.js/.test(src), `${f} must not depend on the Manage code`);
+  }
+  // The Manage page only allows connections to GitHub's API and runs no inline script.
+  const mhtml = readFileSync(path.join(root, 'site', 'manage.html'), 'utf8');
+  assert.match(mhtml, /connect-src https:\/\/api\.github\.com/);
+  assert.ok(!/<script(?![^>]*\ssrc=)[^>]*>/i.test(mhtml), 'no inline scripts');
   const wf = readFileSync(path.join(root, '.github', 'workflows', 'refresh-and-deploy.yml'), 'utf8');
   assert.ok(!/secrets\./.test(wf), 'refresh workflow must not use repository secrets');
 });
