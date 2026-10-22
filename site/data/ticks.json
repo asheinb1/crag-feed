@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T18:48:51.579Z",
-  "lastSuccessAt": "2026-10-21T18:48:51.579Z",
+  "generatedAt": "2026-10-22T00:53:25.058Z",
+  "lastSuccessAt": "2026-10-22T00:53:25.058Z",
   "configErrors": [],
   "climbers": [
     {
@@ -10,10 +10,10 @@
       "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-21T18:48:51.579Z",
-      "lastSuccessAt": "2026-10-21T18:48:51.579Z",
+      "lastAttemptAt": "2026-10-22T00:53:25.058Z",
+      "lastSuccessAt": "2026-10-22T00:53:25.058Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
-      "tickCount": 57
+      "tickCount": 58
     },
     {
       "id": "201670934",
@@ -21,13 +21,31 @@
       "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-21T18:48:51.579Z",
-      "lastSuccessAt": "2026-10-21T18:48:51.579Z",
+      "lastAttemptAt": "2026-10-22T00:53:25.058Z",
+      "lastSuccessAt": "2026-10-22T00:53:25.058Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 56
     }
   ],
   "ticks": [
+    {
+      "id": "200484813:da016fab",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: High Exposure",
+      "grade": "5.6",
+      "url": "https://www.mountainproject.com/route/105798994/high-exposure",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-10-21T23:28:47.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-10-21T23:28:47.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-10-22T00:53:25.058Z",
+      "baseline": false
+    },
     {
       "id": "201670934:8dde7633",
       "climberId": "201670934",
