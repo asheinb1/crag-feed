@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T12:47:43.294Z",
-  "lastSuccessAt": "2026-10-24T12:47:43.294Z",
+  "generatedAt": "2026-10-24T18:42:07.444Z",
+  "lastSuccessAt": "2026-10-24T18:42:07.444Z",
   "configErrors": [],
   "climbers": [
     {
@@ -10,10 +10,10 @@
       "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-24T12:47:43.294Z",
-      "lastSuccessAt": "2026-10-24T12:47:43.294Z",
+      "lastAttemptAt": "2026-10-24T18:42:07.444Z",
+      "lastSuccessAt": "2026-10-24T18:42:07.444Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
-      "tickCount": 60
+      "tickCount": 63
     },
     {
       "id": "201670934",
@@ -21,13 +21,67 @@
       "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-24T12:47:43.294Z",
-      "lastSuccessAt": "2026-10-24T12:47:43.294Z",
+      "lastAttemptAt": "2026-10-24T18:42:07.444Z",
+      "lastSuccessAt": "2026-10-24T18:42:07.444Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 56
     }
   ],
   "ticks": [
+    {
+      "id": "200484813:6adfca66",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Bolt Line",
+      "grade": "5.8",
+      "url": "https://www.mountainproject.com/route/112142199/bolt-line",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-10-24T16:16:05.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-10-24T16:16:05.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-10-24T18:42:07.444Z",
+      "baseline": false
+    },
+    {
+      "id": "200484813:14e81535",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Hooker",
+      "grade": "5.10b",
+      "url": "https://www.mountainproject.com/route/113490010/hooker",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-10-24T16:15:47.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-10-24T16:15:47.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-10-24T18:42:07.444Z",
+      "baseline": false
+    },
+    {
+      "id": "200484813:09cf4fa3",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Ariel's Brassiere",
+      "grade": "5.8",
+      "url": "https://www.mountainproject.com/route/113327448/ariels-brassiere",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-10-24T16:15:33.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-10-24T16:15:33.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-10-24T18:42:07.444Z",
+      "baseline": false
+    },
     {
       "id": "200484813:723070c3",
       "climberId": "200484813",
