@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T18:42:49.350Z",
-  "lastSuccessAt": "2026-10-25T18:42:49.350Z",
+  "generatedAt": "2026-10-26T01:04:07.632Z",
+  "lastSuccessAt": "2026-10-26T01:04:07.632Z",
   "configErrors": [],
   "climbers": [
     {
@@ -10,8 +10,8 @@
       "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-25T18:42:49.350Z",
-      "lastSuccessAt": "2026-10-25T18:42:49.350Z",
+      "lastAttemptAt": "2026-10-26T01:04:07.632Z",
+      "lastSuccessAt": "2026-10-26T01:04:07.632Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 67
     },
@@ -21,8 +21,8 @@
       "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-25T18:42:49.350Z",
-      "lastSuccessAt": "2026-10-25T18:42:49.350Z",
+      "lastAttemptAt": "2026-10-26T01:04:07.632Z",
+      "lastSuccessAt": "2026-10-26T01:04:07.632Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 62
     }
