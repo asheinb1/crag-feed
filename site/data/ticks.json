@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T18:52:24.783Z",
-  "lastSuccessAt": "2026-10-27T18:52:24.783Z",
+  "generatedAt": "2026-10-28T01:06:27.473Z",
+  "lastSuccessAt": "2026-10-28T01:06:27.473Z",
   "configErrors": [],
   "climbers": [
     {
@@ -10,8 +10,8 @@
       "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-27T18:52:24.783Z",
-      "lastSuccessAt": "2026-10-27T18:52:24.783Z",
+      "lastAttemptAt": "2026-10-28T01:06:27.473Z",
+      "lastSuccessAt": "2026-10-28T01:06:27.473Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 67
     },
@@ -21,13 +21,67 @@
       "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-27T18:52:24.783Z",
-      "lastSuccessAt": "2026-10-27T18:52:24.783Z",
+      "lastAttemptAt": "2026-10-28T01:06:27.473Z",
+      "lastSuccessAt": "2026-10-28T01:06:27.473Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
-      "tickCount": 62
+      "tickCount": 65
     }
   ],
   "ticks": [
+    {
+      "id": "201670934:3c9ca6cb",
+      "climberId": "201670934",
+      "climberName": "Reece James",
+      "route": "Tick: 5.8 trad",
+      "grade": "5.8",
+      "url": "https://www.mountainproject.com/route/112166360/58-trad",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-10-28T00:20:28.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-10-28T00:20:28.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-10-28T01:06:27.473Z",
+      "baseline": false
+    },
+    {
+      "id": "201670934:7c2729ad",
+      "climberId": "201670934",
+      "climberName": "Reece James",
+      "route": "Tick: 5.8+ trad",
+      "grade": "5.8+",
+      "url": "https://www.mountainproject.com/route/122207295/58-trad",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-10-28T00:18:24.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-10-28T00:18:24.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-10-28T01:06:27.473Z",
+      "baseline": false
+    },
+    {
+      "id": "201670934:30fdca71",
+      "climberId": "201670934",
+      "climberName": "Reece James",
+      "route": "Tick: 5.4 Trad",
+      "grade": "5.4",
+      "url": "https://www.mountainproject.com/route/116709408/54-trad",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-10-28T00:17:32.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-10-28T00:17:32.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-10-28T01:06:27.473Z",
+      "baseline": false
+    },
     {
       "id": "200484813:cc00b061",
       "climberId": "200484813",
