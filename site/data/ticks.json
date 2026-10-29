@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T18:57:49.556Z",
-  "lastSuccessAt": "2026-10-28T18:57:49.556Z",
+  "generatedAt": "2026-10-29T01:03:35.578Z",
+  "lastSuccessAt": "2026-10-29T01:03:35.578Z",
   "configErrors": [],
   "climbers": [
     {
@@ -10,8 +10,8 @@
       "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-28T18:57:49.556Z",
-      "lastSuccessAt": "2026-10-28T18:57:49.556Z",
+      "lastAttemptAt": "2026-10-29T01:03:35.578Z",
+      "lastSuccessAt": "2026-10-29T01:03:35.578Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 67
     },
@@ -21,8 +21,8 @@
       "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-10-28T18:57:49.556Z",
-      "lastSuccessAt": "2026-10-28T18:57:49.556Z",
+      "lastAttemptAt": "2026-10-29T01:03:35.578Z",
+      "lastSuccessAt": "2026-10-29T01:03:35.578Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 65
     }
@@ -1025,8 +1025,11 @@
       "route": "Tick: Ape Call",
       "grade": "5.8 R",
       "url": "https://www.mountainproject.com/route/106089252/ape-call",
-      "areaPath": [],
-      "area": null,
+      "areaPath": [
+        "1 pitch. TR. Will tried agape. Did the bottom of agape into ape call roof. Agape bottom is a double thumbdercling—",
+        "reach for me. Will was able to do a reach"
+      ],
+      "area": "1 pitch. TR. Will tried agape. Did the bottom of agape into ape call roof. Agape bottom is a double thumbdercling— › reach for me. Will was able to do a reach",
       "published": "2026-09-19T20:01:24.000Z",
       "climbDate": null,
       "dateSource": "published",
