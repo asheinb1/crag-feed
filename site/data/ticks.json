@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-01T12:56:29.998Z",
-  "lastSuccessAt": "2026-11-01T12:56:29.998Z",
+  "generatedAt": "2026-11-01T18:51:16.369Z",
+  "lastSuccessAt": "2026-11-01T18:51:16.369Z",
   "configErrors": [],
   "climbers": [
     {
@@ -10,10 +10,10 @@
       "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-11-01T12:56:29.998Z",
-      "lastSuccessAt": "2026-11-01T12:56:29.998Z",
+      "lastAttemptAt": "2026-11-01T18:51:16.369Z",
+      "lastSuccessAt": "2026-11-01T18:51:16.369Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
-      "tickCount": 72
+      "tickCount": 73
     },
     {
       "id": "201670934",
@@ -21,13 +21,31 @@
       "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-11-01T12:56:29.998Z",
-      "lastSuccessAt": "2026-11-01T12:56:29.998Z",
+      "lastAttemptAt": "2026-11-01T18:51:16.369Z",
+      "lastSuccessAt": "2026-11-01T18:51:16.369Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 69
     }
   ],
   "ticks": [
+    {
+      "id": "200484813:a4bd52fa",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Graveyard Shift",
+      "grade": "5.10d PG13",
+      "url": "https://www.mountainproject.com/route/105799062/graveyard-shift",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-01T16:47:09.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-01T16:47:09.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-01T18:51:16.369Z",
+      "baseline": false
+    },
     {
       "id": "200484813:dc8daf9d",
       "climberId": "200484813",
