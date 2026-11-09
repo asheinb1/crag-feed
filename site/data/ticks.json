@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T18:52:24.325Z",
-  "lastSuccessAt": "2026-11-08T18:52:24.325Z",
+  "generatedAt": "2026-11-09T01:15:52.182Z",
+  "lastSuccessAt": "2026-11-09T01:15:52.182Z",
   "configErrors": [],
   "climbers": [
     {
@@ -10,10 +10,10 @@
       "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-11-08T18:52:24.325Z",
-      "lastSuccessAt": "2026-11-08T18:52:24.325Z",
+      "lastAttemptAt": "2026-11-09T01:15:52.182Z",
+      "lastSuccessAt": "2026-11-09T01:15:52.182Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
-      "tickCount": 80
+      "tickCount": 82
     },
     {
       "id": "201670934",
@@ -21,13 +21,85 @@
       "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-11-08T18:52:24.325Z",
-      "lastSuccessAt": "2026-11-08T18:52:24.325Z",
+      "lastAttemptAt": "2026-11-09T01:15:52.182Z",
+      "lastSuccessAt": "2026-11-09T01:15:52.182Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
-      "tickCount": 69
+      "tickCount": 71
     }
   ],
   "ticks": [
+    {
+      "id": "201670934:1924de5b",
+      "climberId": "201670934",
+      "climberName": "Reece James",
+      "route": "Tick: Bonnie's Roof",
+      "grade": "5.9",
+      "url": "https://www.mountainproject.com/route/105801433/bonnies-roof",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-08T23:56:35.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-08T23:56:35.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-09T01:15:52.182Z",
+      "baseline": false
+    },
+    {
+      "id": "201670934:f411dacf",
+      "climberId": "201670934",
+      "climberName": "Reece James",
+      "route": "Tick: Madame Grunnebaum's Wulst",
+      "grade": "5.6",
+      "url": "https://www.mountainproject.com/route/105799697/madame-grunnebaums-wulst",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-08T23:55:32.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-08T23:55:32.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-09T01:15:52.182Z",
+      "baseline": false
+    },
+    {
+      "id": "200484813:e224a4d5",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Mother's Day Party",
+      "grade": "5.10b",
+      "url": "https://www.mountainproject.com/route/105829767/mothers-day-party",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-08T23:32:53.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-08T23:32:53.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-09T01:15:52.182Z",
+      "baseline": false
+    },
+    {
+      "id": "200484813:d9e43313",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Mother's Day Party",
+      "grade": "5.10b",
+      "url": "https://www.mountainproject.com/route/105829767/mothers-day-party",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-08T23:32:44.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-08T23:32:44.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-09T01:15:52.182Z",
+      "baseline": false
+    },
     {
       "id": "200484813:6503c9a2",
       "climberId": "200484813",
