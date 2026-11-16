@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-15T22:48:05.243Z",
-  "lastSuccessAt": "2026-11-15T22:48:05.243Z",
+  "generatedAt": "2026-11-16T06:25:25.358Z",
+  "lastSuccessAt": "2026-11-16T06:25:25.358Z",
   "configErrors": [],
   "climbers": [
     {
@@ -10,10 +10,10 @@
       "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-11-15T22:48:05.243Z",
-      "lastSuccessAt": "2026-11-15T22:48:05.243Z",
+      "lastAttemptAt": "2026-11-16T06:25:25.358Z",
+      "lastSuccessAt": "2026-11-16T06:25:25.358Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
-      "tickCount": 87
+      "tickCount": 90
     },
     {
       "id": "201670934",
@@ -21,13 +21,67 @@
       "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-11-15T22:48:05.243Z",
-      "lastSuccessAt": "2026-11-15T22:48:05.243Z",
+      "lastAttemptAt": "2026-11-16T06:25:25.358Z",
+      "lastSuccessAt": "2026-11-16T06:25:25.358Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 71
     }
   ],
   "ticks": [
+    {
+      "id": "200484813:c83bd521",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Graveyard Shift",
+      "grade": "5.10d PG13",
+      "url": "https://www.mountainproject.com/route/105799062/graveyard-shift",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-16T01:58:34.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-16T01:58:34.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-16T06:25:25.358Z",
+      "baseline": false
+    },
+    {
+      "id": "200484813:5e84c9db",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Star Action",
+      "grade": "5.10b",
+      "url": "https://www.mountainproject.com/route/105803185/star-action",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-15T22:54:27.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-15T22:54:27.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-16T06:25:25.358Z",
+      "baseline": false
+    },
+    {
+      "id": "200484813:5dee3ef1",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Coexistence",
+      "grade": "5.10d",
+      "url": "https://www.mountainproject.com/route/105799053/coexistence",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-15T22:53:58.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-15T22:53:58.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-16T06:25:25.358Z",
+      "baseline": false
+    },
     {
       "id": "200484813:f8934cd8",
       "climberId": "200484813",
