@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-26T21:29:23.678Z",
-  "lastSuccessAt": "2026-11-26T21:29:23.678Z",
+  "generatedAt": "2026-11-27T08:27:52.790Z",
+  "lastSuccessAt": "2026-11-27T08:27:52.790Z",
   "configErrors": [],
   "climbers": [
     {
@@ -10,10 +10,10 @@
       "profileUrl": "https://www.mountainproject.com/user/200484813/cam-maam/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-11-26T21:29:23.678Z",
-      "lastSuccessAt": "2026-11-26T21:29:23.678Z",
+      "lastAttemptAt": "2026-11-27T08:27:52.790Z",
+      "lastSuccessAt": "2026-11-27T08:27:52.790Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
-      "tickCount": 93
+      "tickCount": 96
     },
     {
       "id": "201670934",
@@ -21,13 +21,67 @@
       "profileUrl": "https://www.mountainproject.com/user/201670934/reece-james/ticks",
       "status": "ok",
       "error": null,
-      "lastAttemptAt": "2026-11-26T21:29:23.678Z",
-      "lastSuccessAt": "2026-11-26T21:29:23.678Z",
+      "lastAttemptAt": "2026-11-27T08:27:52.790Z",
+      "lastSuccessAt": "2026-11-27T08:27:52.790Z",
       "seededAt": "2026-10-16T01:24:11.236Z",
       "tickCount": 74
     }
   ],
   "ticks": [
+    {
+      "id": "200484813:57a4f817",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Drumstick Direct",
+      "grade": "5.10d",
+      "url": "https://www.mountainproject.com/route/105750436/drumstick-direct",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-27T04:10:49.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-27T04:10:49.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-27T08:27:52.790Z",
+      "baseline": false
+    },
+    {
+      "id": "200484813:caffa88a",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Drumstick Direct",
+      "grade": "5.10d",
+      "url": "https://www.mountainproject.com/route/105750436/drumstick-direct",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-27T04:10:28.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-27T04:10:28.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-27T08:27:52.790Z",
+      "baseline": false
+    },
+    {
+      "id": "200484813:96ef2c13",
+      "climberId": "200484813",
+      "climberName": "cam-maam",
+      "route": "Tick: Honky Jam Ass Crack",
+      "grade": "5.7",
+      "url": "https://www.mountainproject.com/route/105750361/honky-jam-ass-crack",
+      "areaPath": [],
+      "area": null,
+      "published": "2026-11-27T04:08:35.000Z",
+      "climbDate": null,
+      "dateSource": "published",
+      "sortDate": "2026-11-27T04:08:35.000Z",
+      "style": null,
+      "notes": null,
+      "firstSeenAt": "2026-11-27T08:27:52.790Z",
+      "baseline": false
+    },
     {
       "id": "201670934:bd24480d",
       "climberId": "201670934",
